@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Volatility Script for Process Enumeration",
+    "href": "/pages/scripts/volatility-process",
+    "section": "Scripts",
+    "author": "Chris Lee"
+  },
+  {
+    "title": "Wireshark Filter Generator",
+    "href": "/pages/scripts/wireshark-filter",
+    "section": "Scripts",
+    "author": "Pat Kim"
+  },
+  {
+    "title": "Log Parser for Insider Threats",
+    "href": "/pages/scripts/log-parser",
+    "section": "Scripts",
+    "author": "Taylor Green"
+  },
+  {
+    "title": "File Carving Script with Scalpel",
+    "href": "/pages/scripts/scalpel-carver",
+    "section": "Scripts",
+    "author": "Morgan White"
+  },
+  {
+    "title": "Malware Static Analysis Tool",
+    "href": "/pages/scripts/malware-static",
+    "section": "Scripts",
+    "author": "Riley Black"
+  }
+]

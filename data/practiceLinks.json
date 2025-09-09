@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Memory Forensics: Uncover Malicious Processes",
+    "href": "/pages/practice/memory-forensics",
+    "section": "Practice"
+  },
+  {
+    "title": "Network Forensics: Trace a Phishing Attack",
+    "href": "/pages/practice/network-forensics",
+    "section": "Practice"
+  },
+  {
+    "title": "Disk Image Analysis: Recover Deleted Files",
+    "href": "/pages/practice/disk-analysis",
+    "section": "Practice"
+  },
+  {
+    "title": "Log Analysis: Detect an Insider Threat",
+    "href": "/pages/practice/log-analysis",
+    "section": "Practice"
+  },
+  {
+    "title": "Malware Analysis: Static File Examination",
+    "href": "/pages/practice/malware-analysis",
+    "section": "Practice"
+  }
+]

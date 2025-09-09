@@ -1,0 +1,32 @@
+[
+  {
+    "title": "DFIR as Life, 2008",
+    "href": "/pages/resources/dfir-life-2008",
+    "section": "Resources",
+    "author": "Jhon Thor"
+  },
+  {
+    "title": "Guide to Memory Forensics with Volatility",
+    "href": "/pages/resources/memory-forensics-guide",
+    "section": "Resources",
+    "author": "Jane Doe"
+  },
+  {
+    "title": "Wireshark Tips for Network Forensics",
+    "href": "/pages/resources/wireshark-tips",
+    "section": "Resources",
+    "author": "Alex Smith"
+  },
+  {
+    "title": "Incident Response Playbook",
+    "href": "/pages/resources/ir-playbook",
+    "section": "Resources",
+    "author": "Sam Wilson"
+  },
+  {
+    "title": "Forensic Analysis with Autopsy",
+    "href": "/pages/resources/autopsy-guide",
+    "section": "Resources",
+    "author": "Emma Brown"
+  }
+]

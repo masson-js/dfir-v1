@@ -1,0 +1,27 @@
+[
+  {
+    "title": "EU General Data Protection Regulation (GDPR)",
+    "href": "/pages/regulations/gdpr",
+    "section": "Regulations"
+  },
+  {
+    "title": "EU Corporate Sustainability Reporting Directive (CSRD)",
+    "href": "/pages/regulations/csrd",
+    "section": "Regulations"
+  },
+  {
+    "title": "U.S. California Consumer Privacy Act (CCPA)",
+    "href": "/pages/regulations/ccpa",
+    "section": "Regulations"
+  },
+  {
+    "title": "U.S. NIST Cybersecurity Framework (CSF)",
+    "href": "/pages/regulations/nist-csf",
+    "section": "Regulations"
+  },
+  {
+    "title": "EU Cybersecurity Act",
+    "href": "/pages/regulations/eu-cybersecurity-act",
+    "section": "Regulations"
+  }
+]
