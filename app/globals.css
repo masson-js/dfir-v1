@@ -25,3 +25,7 @@ body {
   color: var(--foreground);
   font-family: var(  --font-inter);
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
