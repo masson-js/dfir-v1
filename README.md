@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+'use client'
+import { useState } from "react";
+import Header from "@/app/Components/Header";
+import Footer from "@/app/Components/Footer";
+import terms from "@/data/wiki.json";
 
-## Getting Started
+interface TermItem {
+  term: string;
+  definition: string;
+  category: string;
+}
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+export default function Wiki() {
+  const [search, setSearch] = useState("");
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  const filtered: TermItem[] = search.trim()
+    ? terms.filter((item: TermItem) =>
+        item.term.toLowerCase().includes(search.toLowerCase().trim())
+      )
+    : [];
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  return (
+    <div className="flex flex-col w-full min-h-screen">
+      <Header />
+      <div className="flex justify-center mt-24 flex-1 px-4 sm:px-0">
+        <div className="flex flex-col gap-4 w-full max-w-2xl">
+          <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-400">Wiki</h1>
 
-## Learn More
+          {/* Search bar - фиксированная позиция */}
+          <div className="sticky top-4 z-10">
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search terms..."
+              className="w-full p-3 rounded-lg border border-gray-400  placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
+            />
+          </div>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+          {/* Контейнер для результатов с фиксированной минимальной высотой */}
+          <div className="min-h-[200px]">
+            {search.trim() && (
+              <div className="mt-2 flex flex-col gap-3 animate-in fade-in duration-200">
+                {filtered.length > 0 ? (
+                  filtered.map((item, idx) => (
+                    <div 
+                      key={idx} 
+                      className=" p-4  hover:bg-gray-750 transition-colors"
+                    >
+                      <h2 className="text-lg font-semibold text-gray-600 mb-2">{item.term}</h2>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-2">{item.definition}</p>
+                      <span className="text-xs text-gray-400 py-1 ">
+                        Category: {item.category}
+                      </span>
+                    </div>
+                  ))
+                ) : (
+                  <div className="text-center py-8">
+                    <p className="text-gray-400">No results found for "{search}"</p>
+                  </div>
+                )}
+              </div>
+            )}
+            {!search.trim() && (
+              <div className="text-center py-12">
+                <p className="text-gray-500">Start typing to search...</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

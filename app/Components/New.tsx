@@ -58,7 +58,7 @@ export default function NewOnSite() {
   }
 
   return (
-    <div className="flex w-auto sm:ml-52 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
+    <div className="flex w-auto sm:ml-52 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards] mb-4">
       <div className="flex flex-col">
         <p className="font-bold text-lg my-4">New</p>
         <div className="flex flex-col space-y-2">

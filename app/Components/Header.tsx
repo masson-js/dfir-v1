@@ -9,7 +9,7 @@ export default function Header() {
     { title: 'Resources', href: '/pages/resources' },
     { title: 'Regulations', href: '/pages/regulations' },
     { title: 'Blog', href: '/pages/blog' },
-    { title: 'Notes', href: '/pages/notes' },
+
     { title: 'Wiki', href: '/pages/wiki' },
   ];
 

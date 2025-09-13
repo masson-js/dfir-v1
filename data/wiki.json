@@ -1,0 +1,72 @@
+[
+  {
+    "term": "IP",
+    "definition": "Internet Protocol — the core protocol for transmitting data between devices in a network. It provides addressing, routing, and fragmentation.",
+    "category": "Networking"
+  },
+  {
+    "term": "IPv4",
+    "definition": "Internet Protocol version 4 — the most common version of IP addressing, using 32-bit addresses (around 4.3 billion unique addresses).",
+    "category": "Networking"
+  },
+  {
+    "term": "IPv6",
+    "definition": "Internet Protocol version 6 — the newer version of IP with an expanded 128-bit address space (approximately 3.4 x 10^38 unique addresses).",
+    "category": "Networking"
+  },
+  {
+    "term": "DNS",
+    "definition": "Domain Name System — a hierarchical system that translates human-readable domain names into IP addresses (supports both IPv4 and IPv6).",
+    "category": "Networking"
+  },
+  {
+    "term": "MAC",
+    "definition": "Media Access Control address — a unique identifier assigned to a network interface controller (48-bit or 64-bit in newer standards).",
+    "category": "Networking"
+  },
+  {
+    "term": "DHCP",
+    "definition": "Dynamic Host Configuration Protocol — a protocol for automatically assigning IP addresses and configuration parameters to devices in a network.",
+    "category": "Networking"
+  },
+  {
+    "term": "VPN",
+    "definition": "Virtual Private Network — a technology for creating a secure, encrypted connection (tunnel) over a public network such as the internet.",
+    "category": "Security"
+  },
+  {
+    "term": "SOC",
+    "definition": "Security Operations Center — a facility for monitoring, detecting, and responding to information security incidents.",
+    "category": "Cybersecurity"
+  },
+  {
+    "term": "SIEM",
+    "definition": "Security Information and Event Management — a system for collecting, correlating, and analyzing logs and security events in real time.",
+    "category": "Cybersecurity"
+  },
+  {
+    "term": "IOC",
+    "definition": "Indicator of Compromise — an artifact indicating possible compromise or attack (IP addresses, file hashes, domains, registry keys).",
+    "category": "DFIR"
+  },
+  {
+    "term": "TTP",
+    "definition": "Tactics, Techniques, and Procedures — the behavioral patterns, methods, and practices used by attackers.",
+    "category": "Cybersecurity"
+  },
+  {
+    "term": "IR",
+    "definition": "Incident Response — the structured process of identifying, analyzing, containing, and mitigating security incidents.",
+    "category": "DFIR"
+  },
+  {
+    "term": "EDR",
+    "definition": "Endpoint Detection and Response — a tool for detecting, monitoring, and responding to threats on endpoints (PCs, servers, mobile devices).",
+    "category": "Security"
+  },
+  {
+    "term": "APT",
+    "definition": "Advanced Persistent Threat — a sophisticated, long-term cyberattack campaign carried out by organized threat actors, often state-sponsored.",
+    "category": "Cybersecurity"
+  }
+]
