@@ -46,7 +46,7 @@ export default function NewOnSite() {
     !regulations.length
   ) {
     return (
-      <div className="flex mt-4 w-auto ml-4 md:ml-52 mb-20">
+      <div className="flex mt-4 w-auto ml-4 md:ml-52">
         <div className="flex flex-col">
           <p className="font-bold text-lg">New</p>
           <p className="font-light text-sm text-gray-600">
@@ -58,7 +58,7 @@ export default function NewOnSite() {
   }
 
   return (
-    <div className="flex w-auto mt-16 ml-4 sm:ml-52 mb-8 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
+    <div className="flex w-auto sm:ml-52 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
       <div className="flex flex-col">
         <p className="font-bold text-lg my-4">New</p>
         <div className="flex flex-col space-y-2">

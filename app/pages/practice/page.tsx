@@ -7,7 +7,7 @@ export default function Practice() {
   return (
     <div className="flex flex-col w-full min-h-screen ">
       <Header />
-      <div className="flex flex-wrap w-auto ml-4 mt-8 flex-1 sm:ml-52">
+      <div className="flex flex-wrap w-auto ml-4 mt-24 flex-1 sm:ml-52">
         <div className="flex flex-col gap-3 pt-4">
           {practiceLinks.map((link, index) => (
             <Link

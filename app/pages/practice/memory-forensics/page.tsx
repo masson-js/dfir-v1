@@ -5,8 +5,9 @@ export default function MemoryForensics() {
   return (
     <div className="flex flex-col w-full min-h-screen">
       <Header />
-     <div className="max-w-4xl mx-auto p-8  text-gray-900">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 mt-4">Memory Forensics: Uncover Malicious Processes</h1>
+     <div className="max-w-4xl mx-auto p-8  text-gray-900 mt-14  animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-300">Practice</h1>
+      <h2 className="text-2xl sm:text-4xl font-bold mb-2 mt-4">Memory Forensics: Uncover Malicious Processes</h2>
       
       <p className="text-lg text-wrap sm:text-lg text-gray-700 mb-8 mr-8 mt-8">
         Memory forensics has become a cornerstone of modern digital forensics and incident response (DFIR). As attackers increasingly employ fileless malware, living-off-the-land techniques, and sophisticated evasion methods, the ability to analyze volatile memory has become essential for uncovering malicious activities that leave minimal traces on disk.
