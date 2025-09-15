@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import Header from "@/app/Components/Header";
 import Footer from "@/app/Components/Footer";
@@ -24,9 +24,9 @@ export default function Wiki() {
       <Header />
       <div className="flex justify-center mt-24 flex-1 px-4 sm:px-0 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
         <div className="flex flex-col gap-4 w-full max-w-2xl">
-          <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-400">Wiki</h1>
-
-          {/* Search bar */}
+          <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-400">
+            Wiki
+          </h1>
           <input
             type="text"
             value={search}
@@ -34,19 +34,21 @@ export default function Wiki() {
             placeholder="Start typing to search..."
             className="w-full p-3 rounded-lg border border-gray-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-all duration-200"
           />
-
-          {/* Контейнер с фиксированной высотой и заранее зарезервированным местом под скроллбар */}
           <div className="min-h-[200px] overflow-y-auto pr-4">
             {search.trim() ? (
               <div className="flex flex-col gap-3">
                 {filtered.length > 0 ? (
                   filtered.map((item, idx) => (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className="p-4 hover:bg-gray-750 transition-colors animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]"
                     >
-                      <h2 className="text-lg font-semibold text-gray-600 mb-2">{item.term}</h2>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-2">{item.definition}</p>
+                      <h2 className="text-lg font-semibold text-gray-600 mb-2">
+                        {item.term}
+                      </h2>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-2">
+                        {item.definition}
+                      </p>
                       <span className="text-xs text-gray-400 py-1">
                         Category: {item.category}
                       </span>
@@ -54,14 +56,14 @@ export default function Wiki() {
                   ))
                 ) : (
                   <div className="text-center py-8">
-                    <p className="text-gray-400">No results found for "{search}"</p>
+                    <p className="text-gray-400">
+                      No results found for "{search}"
+                    </p>
                   </div>
                 )}
               </div>
             ) : (
-              <div className="text-center py-12">
-                
-              </div>
+              <div className="text-center py-12"></div>
             )}
           </div>
         </div>

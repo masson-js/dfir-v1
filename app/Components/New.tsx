@@ -8,14 +8,11 @@ interface RecentEntry {
 }
 
 export default function NewOnSite() {
-  // Load JSON files directly
-  const practiceLinks: RecentEntry[] =
-    require("@/data/practiceLinks.json") || [];
+  const practiceLinks: RecentEntry[] = require("@/data/practice.json") || [];
   const resources: RecentEntry[] = require("@/data/resources.json") || [];
   const scripts: RecentEntry[] = require("@/data/scripts.json") || [];
   const regulations: RecentEntry[] = require("@/data/regulations.json") || [];
 
-  // Group entries by section
   const sections: { [key: string]: RecentEntry[] } = {
     Practice: practiceLinks.slice(0, 3),
     Scripts: scripts.slice(0, 3),
@@ -38,7 +35,6 @@ export default function NewOnSite() {
     }
   };
 
-  // Check if all sections are empty
   if (
     !practiceLinks.length &&
     !resources.length &&
@@ -80,10 +76,6 @@ export default function NewOnSite() {
                           entry.section
                         )} pl-2 max-[640px]:flex-col max-[640px]:gap-1 font-bold`}
                       >
-                       
-                      
-                       
-                        
                         {entry.title}
                       </div>
                     </Link>

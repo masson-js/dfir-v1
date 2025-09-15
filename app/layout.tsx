@@ -6,7 +6,7 @@ import "./globals.css";
 const sourceCodePro = Inter({
   variable: "--font-source-code-pro",
   subsets: ["latin"],
-  weight: ["400", "700"], // Adjust weights as needed
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
