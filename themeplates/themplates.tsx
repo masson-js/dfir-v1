@@ -2,11 +2,10 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function themplates() {
-  
   return (
     <div className="flex flex-col w-full min-h-screen">
       <header>Header</header>
-      <div className="max-w-4xl mx-auto p-8  text-gray-900 mt-14 ">
+      <div className="w-full lg:w-3/5 max-w-screen-xl mx-auto p-4 sm:p-8 text-gray-900 mt-14 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards] overflow-x-hidden">
         {" Section Title"}
         <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-gray-300">
           Section Title
@@ -31,31 +30,15 @@ export default function themplates() {
         </ul>
 
         {"Code and Scripts"}
-        {"Commands"}
-        <div className="bg-gray-900 text-gray-10 p-4 rounded mb-6">
-          <div className="text-gray-400 text-xs uppercase mb-2 border-b border-gray-700 pb-1">
-            BASH
-          </div>
-          <div className="font-mono text-sm">
-            <div className="text-gray-400"># comment</div>
-            <div className="text-green-400">comand</div>
-            <br />
-            <div className="text-gray-400"># comment</div>
-            <div className="text-green-400">command</div>
-          </div>
-        </div>
 
         {"Code "}
 
         <div>
           <SyntaxHighlighter language="bash" style={tomorrow}>
-            {`BASH
-# Basic process enumeration
+            {`# Basic process enumeration (bash)
 volatility -f memory.dmp --profile=Win10x64_19041 pslist
-# Detect process injection
-volatility -f memory.dmp --profile=Win10x64_19041 pslist
-             
-             `}
+# Detect process injection (bash)
+volatility -f memory.dmp --profile=Win10x64_19041 malfind`}
           </SyntaxHighlighter>
         </div>
       </div>
