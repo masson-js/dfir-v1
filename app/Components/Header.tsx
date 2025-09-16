@@ -38,7 +38,7 @@ export default function Header() {
       </div>
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden p-2"
+        className="md:hidden p-2 mr-4"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
         <svg

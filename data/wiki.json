@@ -65,6 +65,20 @@
     "category": "Security"
   },
   {
+    "term": "Countermeasure",
+    "definition": " The actions that are taken to protect assets by mitigating a threat or reducing risk."
+  },
+  {
+    "term": "IOC",
+    "definition": "Indicators of Compromise. Evidence that an attack has already occurred (e.g., malicious files, hashes, IP addresses, domains, registry changes)",
+    "category": "Security"
+  },
+  {
+    "term": "IOA",
+    "definition": "Indicators of Attack. Signs of attacker intent or strategy, showing how an attack may happen (e.g., phishing email, suspicious link, exploitation of a vulnerability).",
+    "category": "Security"
+  },
+  {
     "term": "APT",
     "definition": "Advanced Persistent Threat — a sophisticated, long-term cyberattack campaign carried out by organized threat actors, often state-sponsored.",
     "category": "Cybersecurity"

@@ -21,7 +21,7 @@ export default function Blogs() {
               <Link
                 key={index}
                 href={link.href}
-                className="sm:text-sm text-[14px] text-gray-600  hover:text-gray-800 hover:underline transition-colors duration-200 border-l-2 border-green-500 pl-4 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards] text-wrap"
+                className="sm:text-sm text-[14px] text-gray-600  hover:text-gray-800 hover:underline transition-colors duration-200 border-l-2 border-purple-500 pl-4 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards] text-wrap"
               >
                 {link.title}
               </Link>

@@ -3,7 +3,7 @@ import Link from "next/link";
 interface RecentEntry {
   title: string;
   href: string;
-  section: "Practice" | "Resources" | "Scripts" | "Regulations";
+  section: "Practice" | "Resources" | "Scripts" | "Regulations" | "Blogs";
   author?: string;
 }
 
@@ -12,12 +12,14 @@ export default function NewOnSite() {
   const resources: RecentEntry[] = require("@/data/resources.json") || [];
   const scripts: RecentEntry[] = require("@/data/scripts.json") || [];
   const regulations: RecentEntry[] = require("@/data/regulations.json") || [];
+  const blogs: RecentEntry[] = require("@/data/blogs.json") || [];
 
   const sections: { [key: string]: RecentEntry[] } = {
     Practice: practiceLinks.slice(0, 3),
     Scripts: scripts.slice(0, 3),
     Resources: resources.slice(0, 3),
     Regulations: regulations.slice(0, 3),
+    Blogs: blogs.slice(0, 3),
   };
 
   const getBorderColor = (section: RecentEntry["section"]): string => {
@@ -30,6 +32,8 @@ export default function NewOnSite() {
         return "border-yellow-500";
       case "Regulations":
         return "border-purple-500";
+      case "Blogs":
+        return "border-purple-300";
       default:
         return "border-gray-500";
     }
@@ -39,6 +43,7 @@ export default function NewOnSite() {
     !practiceLinks.length &&
     !resources.length &&
     !scripts.length &&
+    !blogs.length &&
     !regulations.length
   ) {
     return (
@@ -54,7 +59,7 @@ export default function NewOnSite() {
   }
 
   return (
-    <div className="flex w-auto sm:ml-52 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards]">
+    <div className="flex w-auto sm:ml-52 animate-fade-in opacity-0 animate-[fadeIn_0.6s_ease-in-out_forwards] pr-6">
       <div className="flex flex-col">
         <p className="font-bold text-lg my-4">New</p>
         <div className="flex flex-col space-y-2">
