@@ -66,7 +66,8 @@
   },
   {
     "term": "Countermeasure",
-    "definition": " The actions that are taken to protect assets by mitigating a threat or reducing risk."
+    "definition": " The actions that are taken to protect assets by mitigating a threat or reducing risk.",
+     "category": "Security"
   },
   {
     "term": "IOC",
