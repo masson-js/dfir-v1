@@ -1,0 +1,38 @@
+
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Article {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  category  String
+  blocks    ContentBlock[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("articles")
+}
+
+model ContentBlock {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  articleId String    @db.ObjectId
+  article   Article   @relation(fields: [articleId], references: [id], onDelete: Cascade)
+  
+  type      String   // 'section-title' | 'title' | 'subtitle' | 'text' | 'list' | 'code' | 'imageLink'
+  content   String
+  language  String?  
+  order     Int
+  imageLink String? 
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  @@map("content_blocks")
+}
